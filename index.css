@@ -1,0 +1,100 @@
+label {
+  width: 500px;
+  height: 200px;
+  background-color: #ebebeb;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4);
+  display: block;
+  border-radius: 200px;
+  position: relative;
+}
+
+input {
+  visibility: hidden;
+}
+
+label::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  top: 10px;
+  left: 10px;
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+input:checked + label {
+  background: #242424;
+}
+input:checked + label::after {
+  left: 300px;
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label svg {
+  width: 120px;
+  position: absolute;
+  z-index: 100;
+}
+label .moon {
+  left: 350px;
+  fill: #7e7e7e;
+  top: 35px;
+  transition: 0.3s;
+}
+label .sun {
+  fill: #fff;
+  top: 35px;
+  left: 35px;
+  transition: 0.3s;
+}
+
+/* label {
+    width: 500px;
+    height: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    background: #ebebeb;
+    position: relative;
+    display: block;
+    border-radius: 200px;
+    transition: 0.3s;
+  }
+  input {
+    visibility: hidden;
+  }
+  label::after {
+    content: '';
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    top: 10px;
+    left: 10px;
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  input:checked + label {
+    background: #242424;
+  }
+  input:checked + label::after {
+    left: 300px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+  }
+  label svg {
+    position: absolute;
+    width: 120px;
+    top: 40px;
+    z-index: 100;
+  }
+  
+  label svg.sun {
+    left: 40px;
+    fill: #fff;
+    transition: 0.3s;
+  }
+  label svg.moon {
+    left: 340px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+  } */
